@@ -22,6 +22,6 @@ To design an interactive HR Analytics dashboard that enables HR leaders to:
 ## **Power BI Dashboard Snapshots**
 The dashboard provides comprehensive insights across the following pages:
 1. **Workforce Overview & Dempgraphic Page**: Displays headcount, employee distribution, salary, and workforce composition.
-    ![Workforce Overview & Demographic](Images/Workforce%20Overview%20&%&Demographic.png)
+    ![Workforce Overview & Demographic](HR_Analysis/workforce-overview-demographic.png)
 
 
