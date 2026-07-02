@@ -31,11 +31,11 @@ The dashboard provides comprehensive insights across the following pages:
     ![Workforce Overview & Demographic](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/a585a089c30ad72ef430af35625cb484d9164fda/HR_Analysis/Attrition%20%26%20Retention%20Analysis.png)
     
 ## **Dataset Overview**
-1. **Data Source**: [HR_Employee_Dataset](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/20a51a91a18969990e283af127c025a1bc142abe/HR_Analysis/HR_Employee_Dataset.csv)
+1. **Dataset Source**: [HR_Employee_Dataset](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/20a51a91a18969990e283af127c025a1bc142abe/HR_Analysis/HR_Employee_Dataset.csv)
 
-2. **Data Dictionary**: [HR_Dataset_Data_Dictionary](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/20a51a91a18969990e283af127c025a1bc142abe/HR_Analysis/HR_Dataset_Data%20Dictionary.docx)
+2. **Dataset Dictionary**: [HR_Dataset_Data_Dictionary](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/20a51a91a18969990e283af127c025a1bc142abe/HR_Analysis/HR_Dataset_Data%20Dictionary.docx)
 
-3.**Data description**
+ 3.**Dataset description** :
  | Category | Columns |
  |---|---|
  | **Identity & Demographics** | Employee_ID, Full_Name, Gender, Age, Marital_Status, Number_of_Dependents, State_of_Origin |
@@ -44,6 +44,24 @@ The dashboard provides comprehensive insights across the following pages:
  | **Compensation** | Monthly_Salary_NGN |
  | **Performance & Engagement** | Performance_Rating, Job_Satisfaction_Score, Employee_Engagement_Score, Training_Hours_Per_Year |
  | **Risk Indicators** | Overtime_Flag, Absences_Per_Year, **Attrition** |
+ 
+ ## **Dataset Cleaning** 
+ The dataset cleaning was performed in **Power Query**
+ 1. **Remove Duplicates** : Removed 50 exact duplicate rows using `Employee_ID` as the unique identifier.
+ 2. **Fixed Typos in Categorical Columns** : Standardised inconsistent casing and corrected geographic misspellings.
+ 3. **Impute Missing Values** : The columns that had nissing values had a threshold of **5%**.
+
+
+| Column | Missing % | Method | Justification |
+|---|---|---|---|
+| `Job_Satisfaction_Score` | 2.5% | **Column median** | Ordinal 1–5 scale. Median preserves integer-like nature and is robust to skew. |
+| `Training_Hours_Per_Year` | 2.0% | **Column median** | Right-skewed distribution. Median more representative than mean. |
+| `Education_Level` | 3.0% | **Mode (B.Sc/B.A)** |  Majority of employees hold a first degree. Mode imputation minimises distribution distortion. |
+| `Marital_Status` | 2.0% | **"Unknown"** | Imputing the mode (Married) would misrepresent individual profiles and artificially inflate one group's count. |
+
+## Data Model
+The data model follows a **star schema pattern** .One central fact table connected to four dimension tables. This structure separates measurable metrics from descriptive attributes, enabling efficient DAX computation and clean dimensional filtering.
+![Data Model](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/373a8ccb34f8c036b52740dadaaf6c03fd68fcfe/HR_Analysis/Data%20Model.png)
 
 
 
