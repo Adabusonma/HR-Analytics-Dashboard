@@ -63,6 +63,21 @@ The dashboard provides comprehensive insights across the following pages:
 The data model follows a **star schema pattern** .One central fact table connected to four dimension tables. This structure separates measurable metrics from descriptive attributes, enabling efficient DAX computation and clean dimensional filtering.
 ![Data Model](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/373a8ccb34f8c036b52740dadaaf6c03fd68fcfe/HR_Analysis/Data%20Model.png)
 
+## **Key Insights**
+The dashboard provides insights to:
+- **Workforce Stability** : The organization retains 82% of its workforce, with an 18% attrition rate, indicating opportunities to strengthen employee retention.
+- **High-Risk Department** : Customer Service recorded the highest attrition (22%), making it the primary focus for retention initiatives.
+- **Experienced Talent Loss** : Employees with 11–15 years of tenure have the highest attrition (19%), highlighting the need to retain experienced talent.
+- **Performance & Training** : Employees get about the same amount of training (23.5 hours) no matter how well they perform. This means more training hours alone doesn't lead to better performance.
+- **Career Development** :Junior employees have the highest attrition (26%), indicating challenges in retaining early-career talent.
+- **Overtime & Absenteeism** : Employees with high absenteeism and overtime show a slightly higher risk of leaving, indicating potential burnout.
+-  **Employee Satisfaction** : Employee satisfaction averaging 3.4/5 remains consistent across departments, suggesting that other factors drive employee retention and performance.
+
+By leveraging on these insights,the HR department can identify workforce trends, improve employee retention and support smarter, data-driven HR decisions.
+
+
+
+
 
 
 
