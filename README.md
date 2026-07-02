@@ -31,6 +31,20 @@ The dashboard provides comprehensive insights across the following pages:
     ![Workforce Overview & Demographic](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/a585a089c30ad72ef430af35625cb484d9164fda/HR_Analysis/Attrition%20%26%20Retention%20Analysis.png)
     
 ## **Dataset Overview**
-**Data Source**:
+1. **Data Source**: [HR_Employee_Dataset](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/20a51a91a18969990e283af127c025a1bc142abe/HR_Analysis/HR_Employee_Dataset.csv)
+
+2. **Data Dictionary**: [HR_Dataset_Data_Dictionary](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/20a51a91a18969990e283af127c025a1bc142abe/HR_Analysis/HR_Dataset_Data%20Dictionary.docx)
+
+3.**Data description**
+ | Category | Columns |
+ |---|---|
+ | **Identity & Demographics** | Employee_ID, Full_Name, Gender, Age, Marital_Status, Number_of_Dependents, State_of_Origin |
+ | **Role & Structure** | Education_Level, Department, Job_Title, Job_Level, Employment_Type, Work_Location |
+ | **Tenure** | Hire_Date, Years_of_Service, Years_Since_Last_Promotion |
+ | **Compensation** | Monthly_Salary_NGN |
+ | **Performance & Engagement** | Performance_Rating, Job_Satisfaction_Score, Employee_Engagement_Score, Training_Hours_Per_Year |
+ | **Risk Indicators** | Overtime_Flag, Absences_Per_Year, **Attrition** |
+
+
 
 
