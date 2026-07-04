@@ -61,6 +61,7 @@ The dashboard provides comprehensive insights across the following pages:
 
 ## Data Model
 The data model follows a **star schema pattern** .One central fact table connected to four dimension tables. This structure separates measurable metrics from descriptive attributes, enabling efficient DAX computation and clean dimensional filtering.
+
 ![Data Model](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/373a8ccb34f8c036b52740dadaaf6c03fd68fcfe/HR_Analysis/Data%20Model.png)
 
 ## **Key Insights**
