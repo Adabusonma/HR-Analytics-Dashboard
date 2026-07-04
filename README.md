@@ -75,7 +75,12 @@ The dashboard provides insights to:
 
 By leveraging on these insights,the HR department can identify workforce trends, improve employee retention and support smarter, data-driven HR decisions.
 
+## **Resource Guide**
+Executive report : [HR_Executive_report_analysis](https://github.com/Adabusonma/HR-Analytics-Dashboard/blob/94c6779e7ebf45cc7316d6f126589413f8b2b212/HR_Analysis/HR_Executive_report_analysis.pdf)
 
+## **Author**
+**Adaeze Princess Ekwuruke**    
+- **LinkedIn**: [Connect with Me](www.linkedin.com/in/adaeze-ekwuruke)  
 
 
 
